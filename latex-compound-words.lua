@@ -69,7 +69,7 @@ function process_hyphen(elem)
   for index, part in ipairs(parts) do
     table.insert(o, pandoc.Str(part))
     if index < #parts then
-      table.insert(o, pandoc.RawInline('latex', '\\hyp'))
+      table.insert(o, pandoc.RawInline('latex', '\\hyp '))
     end
   end
   return o
