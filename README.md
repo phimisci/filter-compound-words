@@ -7,4 +7,4 @@ LaTeX does not allow hyphenation in compound words, which can lead to sub-optima
 ## Method
 We use `\hyp` from the `hyphenat` package. We thus expect `hyphenat` to be part of the LaTeX template in use.
 A previous implementation of a similar filter relied on the `babel` shorthand `"-`, but this one is only available in some language presets. An alternative would be to use 
-`\babelhyphen{hard}`, but we decided to not rely on babel at all.
+`\babelhyphen{hard}`, but we decided to not rely on `babel` at all.
